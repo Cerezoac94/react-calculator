@@ -1,0 +1,117 @@
+#root {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-direction: column;
+	align-items: center;
+}
+
+.app {
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+.card {
+	width: 40rem;
+	height: min-content;
+	display: grid;
+	grid-template-areas:
+	'display display display display'
+	'clear division multiplication subtraction'
+	'seven eight nine addition'
+	'four five six addition'
+	'one two three equals'
+	'btnZero btnZero point equals';
+	grid-auto-rows: 8rem;
+	gap: 1.5rem;
+	align-content: center;
+	padding: 2em;
+	border-radius: 2em;
+	background-color: blueviolet;
+}
+
+.card__input{
+	height: 7rem;
+	padding: .5rem;
+	border-radius: 1rem;
+	font-size: 3rem;
+	grid-area: display;
+	text-align: right;
+}
+
+button {
+		 border-radius: 5rem;
+		 border: none;
+		 font-size: 2em;
+		 cursor: pointer;
+}
+.card__buttonC {
+	grid-area: clear;
+}
+
+.card__buttonDivision {
+	grid-area: division;
+}
+
+.card__buttonMultiplication {
+	grid-area: multiplication;
+}
+
+.card__buttonSubtraction {
+	grid-area: subtraction;
+}
+
+.card__button7 {
+	grid-area: seven;
+}
+
+.card__button8 {
+	grid-area: eight;
+}
+
+.card__button9 {
+	grid-area: nine;
+}
+
+.card__buttonAddition {
+	grid-area: addition;
+}
+
+.card__button4 {
+	grid-area: four;
+}
+
+.card__button5 {
+	grid-area: five;
+}
+
+.card__button6 {
+	grid-area: six;
+}
+
+.card__button1 {
+	grid-area: one;
+}
+
+.card__button2 {
+	grid-area: two;
+}
+
+.card__button3 {
+	grid-area: three;
+}
+
+.card__buttonEquals {
+	grid-area: equals;
+}
+
+.card__buttonZero {
+	grid-area: btnZero;
+}
+
+.card__buttonDot {
+	grid-area: point;
+}
